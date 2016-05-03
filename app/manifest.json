@@ -1,0 +1,34 @@
+{
+  "name": "Trello Card Filter",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Filter Cards on Trello Boards",
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "scripts/chromereload.js",
+      "scripts/background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://trello.com/*",
+        "https://trello.com/*"
+      ],
+      "css": [
+        "stylesheets/content.css"
+      ],
+      "js": [
+        "bower_components/jquery/dist/jquery.min.js",
+        "scripts/contentscript.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ]
+}
