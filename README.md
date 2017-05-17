@@ -1,5 +1,7 @@
 # Trello Card Filter
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/luebken/trello-card-filter.svg)](https://greenkeeper.io/)
+
 A Chrome extension to filter Trello cards by title
 
 # develop
